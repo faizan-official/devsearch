@@ -1,1 +1,1 @@
-web: gunicorn devsearch.wsgi --log-file -
+web: python manage.py migrate && gunicorn devsearch.wsgi
